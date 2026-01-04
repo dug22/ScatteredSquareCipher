@@ -21,6 +21,8 @@ public class ScatteredSquareCipher {
         char[][] extendedPolybiusSquare = createExtendedPolybiusSquare(key, keyCharacterGridPositions);
         StringBuilder resultingText = new StringBuilder();
         int keyIndex = 0;
+        int GRID_SIZE = 6;
+        int TOTAL_CELLS = GRID_SIZE * GRID_SIZE;
         for (int i = 0; i < text.length(); i++) {
             char textCharacter = text.charAt(i);
             char keyCharacter = key.charAt(keyIndex);
@@ -30,11 +32,10 @@ public class ScatteredSquareCipher {
                 continue;
             }
 
-            int GRID_SIZE = 6;
+            
             int currentIndex = textCharacterCoordinates[0] * GRID_SIZE + textCharacterCoordinates[1];
             int shiftAmount = getKeyValueIndex(keyCharacter);
             int newIndex;
-            int TOTAL_CELLS = GRID_SIZE * GRID_SIZE;
             if (encrypt) {
                 newIndex = (currentIndex + shiftAmount) % TOTAL_CELLS;
             } else {
