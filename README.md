@@ -1,4 +1,4 @@
-## Brief Introduction
+# Brief Introduction
 
 After learning about classical ciphers like the PlayFair cipher, the Nihilist cipher, etc, I decided to create my own custom cipher for fun, and it is called the Scattered Square Cipher. I decided to implement the Scattered Square Cipher using Java. I will be explaining how the the scattered square cipher works step by step.
 
