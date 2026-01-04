@@ -76,13 +76,7 @@ For the cells that are empty, fill them up with characters that are allowed (A-Z
 ```
 
 ## Encrypting Our Plaintext
-The encryption process for the Scatter Square Cipher is straightforward.
-
-  - First, locate the plaintext character within the 6×6 Polybius square and determine its linear index, counting row by row from top-left to bottom-right (A = 0, B = 1, …, Z = 25, 0 = 26, 1 = 27, …, 9 = 35).
-  -  Then, shift the character forward by the index of the corresponding key character, wrapping through the square row by row as needed.
-
-For example to encrypt the letter locate the letter H within our polybius square. H is in row 2 column 1 or index 7. Now we want to count 15 places to the right row by row, because P has an index of 15.
-H becomes O. Now let's solve the rest for the of the characters.
+The encryption process for the Scattered Square Cipher is straightforward. In order to encrypt the corresponding plaintext letter or number, locate where the given letter or number is within the 6x6 polybius square. Next, find out the index of the key's character index (A = 0, B = 1, Z = 25, 0 = 26, 1 = 27, 9 = 35). From there, you are going to count key index spaces forward, resulting in that plaintext letter or number becoming a part of your ciphertext. For example, in order to encrypt the letter H, we need to locate the letter within our polybius square. H is in row 2, column 1, or index 7. Now we want to count 15 places to the right row by row, as P has an index of 15. H now becomes O. Now let's solve the rest for the rest of the characters.
 
 
 - E's index is 21 in the polybius square. Q's index is 16. Couting forward 16 spaces results in E becoming A.
@@ -98,7 +92,7 @@ H becomes O. Now let's solve the rest for the of the characters.
 **Final Encrypted Message:** OAU83 QGH13
 
 ## Decrypting our Ciphertext:
-The decryption process works in the same way as the encryption process, except that it counts backwards from the location of the ciphertext character within the polybius square. You count backwards X amount of spaces based on the index of the key. 
+The decryption process works in the same way as the encryption process, except that it counts backwards from the location of the ciphertext character within the polybius square. You count backwards X amount of spaces based on the index of the key, row by row. 
 
 - O's index is 22 in the polybius square. P's index is 15. Couting backwards 15 spaces results in O becoming H.
 - A's index is 1 in the polybius square. Q's index is 16. Couting backwards 16 spaces results in A becoming E.
