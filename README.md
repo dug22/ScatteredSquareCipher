@@ -76,7 +76,7 @@ For the cells that are empty, fill them up with characters that are allowed (A-Z
 ```
 
 ## Encrypting Our Plaintext
-The encryption process for the Scattered Square Cipher is straightforward. In order to encrypt the corresponding plaintext letter or number, locate where the given letter or number is within the 6x6 polybius square. Next, we need to find out the index of the key's character index (A = 0, B = 1, Z = 25, 0 = 26, 1 = 27, 9 = 35). From there, you are going to count key index spaces forward, resulting in that new letter or number becoming a part of your ciphertext. For example, in order to encrypt the letter H, we need to locate the letter within our polybius square. H is in row 2, column 1, or index 7. Now we need to count 15 (as P has an index of 15) spaces forward, row by row. H now becomes O. Now let's solve the rest for the rest of the characters.
+The encryption process for the Scattered Square Cipher is straightforward. In order to encrypt the corresponding plaintext letter or number, locate where the given letter or number is within the 6x6 polybius square. Next, we need to find out the index of the key's character index (A = 0, B = 1, Z = 25, 0 = 26, 1 = 27, 9 = 35). From there, you are going to count key index spaces forward, resulting in that new letter or number becoming a part of your ciphertext. For example, in order to encrypt the letter H, we need to locate the letter within our polybius square. H is in row 2, column 1, or index 7. Now we need to count 15 (as P has an index of 15) spaces forward, row by row. H now becomes O. Now let's solve for the rest of the plaintext.
 
 
 - E's index is 21 in the polybius square. Q's index is 16. Couting forward 16 spaces results in E becoming A.
