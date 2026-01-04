@@ -92,7 +92,7 @@ The encryption process for the Scattered Square Cipher is straightforward. In or
 **Final Encrypted Message:** OAU83 QGH13
 
 ## Decrypting our Ciphertext:
-The decryption process works in the same way as the encryption process, except that it counts backwards from the location of the ciphertext character within the polybius square. You count backwards X amount of spaces based on the index of the key, row by row. 
+The decryption process works the same way as the encryption process, except that it counts backwards from the location of the ciphertext character within the polybius square. You count backwards X amount of spaces based on the index of the key's character, row by row. 
 
 - O's index is 22 in the polybius square. P's index is 15. Couting backwards 15 spaces results in O becoming H.
 - A's index is 1 in the polybius square. Q's index is 16. Couting backwards 16 spaces results in A becoming E.
